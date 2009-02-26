@@ -1,0 +1,24 @@
+<h1>Editing note</h1>
+
+<% form_for(@note) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :notable_id %><br />
+    <%= f.text_field :notable_id %>
+  </p>
+  <p>
+    <%= f.label :notable_type %><br />
+    <%= f.text_field :notable_type %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @note %> |
+<%= link_to 'Back', notes_path %>

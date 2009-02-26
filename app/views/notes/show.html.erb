@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @note.name %>
+</p>
+
+<p>
+  <b>Notable:</b>
+  <%=h @note.notable_id %>
+</p>
+
+<p>
+  <b>Notable type:</b>
+  <%=h @note.notable_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>
